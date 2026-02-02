@@ -30,41 +30,41 @@
 
 # Working of Polynomial Linear Regression
 
-1️⃣ Import Required Libraries:
+# 1️⃣ Import Required Libraries:
      - import numpy as np
      - import pandas as pd
      - import matplotlib.pyplot as plt
      - import sklearn
-2️⃣ Load the Dataset
+# 2️⃣ Load the Dataset
      - df = pd.read_csv('Position_Salaries.csv')
     The dataset contains:
     - Position
     - Level
     - Salary
-3️⃣ Data Preprocessing
+# 3️⃣ Data Preprocessing
     - df = df.drop(['Position'], axis=1)
 
 
 - The Position column is removed
 - Only numerical features are used for regression
 
-4️⃣ Define Independent and Dependent Variables
+# 4️⃣ Define Independent and Dependent Variables
 - X (Level) → input feature
 - y (Salary) → target value
 
-5️⃣ Visualize the Data
+# 5️⃣ Visualize the Data
      - plt.scatter(x=X, y=y, color='r', marker='*')
      - plt.title('POLYNOMIAL REGRESSION')
      - plt.show()
 
  <img width="439" height="297" alt="image" src="https://github.com/user-attachments/assets/9a5861a8-540c-4e09-843f-16ed36b78381" />
 
-6️⃣ Create Polynomial Features
+# 6️⃣ Create Polynomial Features
      - from sklearn.preprocessing import PolynomialFeatures
      - poly_reg = PolynomialFeatures(degree=2)
      - poly_res = poly_reg.fit_transform(X)
  
-7️⃣ Apply Linear Regression on Polynomial Features
+# 7️⃣ Apply Linear Regression on Polynomial Features
      - from sklearn.linear_model import LinearRegression
      - reg = LinearRegression()
      - reg.fit(poly_res, y)
@@ -72,10 +72,10 @@
 - Linear Regression is still used
 - That’s why it’s called Polynomial Linear Regression
 
-8️⃣ Make Predictions
+# 8️⃣ Make Predictions
     - prediction = reg.predict(poly_res)
 
-9️⃣ Visualize the Polynomial Regression Curve
+# 9️⃣ Visualize the Polynomial Regression Curve
      - plt.scatter(x=X, y=y, color='r', marker='*')
      - plt.plot(X, prediction, color='b')
      - plt.title('POLYNOMIAL REGRESSION')
