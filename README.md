@@ -63,6 +63,8 @@
      - from sklearn.preprocessing import PolynomialFeatures
      - poly_reg = PolynomialFeatures(degree=2)
      - poly_res = poly_reg.fit_transform(X)
+     - fit -> is used for maths calculation (mean)
+     - transform -> is used for transform the fit values
  
 # 7️⃣ Apply Linear Regression on Polynomial Features
      - from sklearn.linear_model import LinearRegression
@@ -96,14 +98,11 @@
 
 # uses of PLR:
 
-- 1. Salary Prediction:
-. Used when salary growth is not linear with experience or position level.
-- 2. Trend Analysis:
-. Helps model curved trends in:
-- 3. Population Growth Modeling
-. Population growth often follows a curved pattern, not a straight line.
-- 4. Scientific & Engineering Data
-- 5. Machine Learning Feature Engineering
+ 1. Salary Prediction:
+ 2. Trend Analysis:
+ 3. Population Growth Modeling
+ 4. Scientific & Engineering Data
+ 5. Machine Learning Feature Engineering
  
   
 # 📌 Summary
