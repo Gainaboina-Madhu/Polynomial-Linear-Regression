@@ -96,7 +96,7 @@
 
 - Polynomial Regression works by transforming features, not by changing the regression algorithm.
 
-# uses of PLR:
+# USES of PLR:
 
  1. Salary Prediction:
  2. Trend Analysis:
